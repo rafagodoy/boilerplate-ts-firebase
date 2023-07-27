@@ -1,5 +1,0 @@
-{
-  "WelcomeIntent": "Eai meu caro qual cotacao deseja saber agora?",
-  "GetStockPriceIntent": "O preco da acao {companyName} e de {price} reais",
-  "ErrorFoundIntent": "Não entendi o que você falou, pode repetir novamente?"
-}
