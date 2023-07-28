@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
    {
-    "name": "my-money-bot-api-debug",
+    "name": "big-eye-api-debug",
     "type": "node",
     "request": "launch",
     "cwd": "${workspaceRoot}",
@@ -17,27 +17,5 @@
     "internalConsoleOptions": "neverOpen",
     "restart": true
    },
-   {
-    "name": "alexa-skill-debug",
-    "type": "node",
-    "request": "launch",
-    "runtimeArgs": [
-      "-r",
-      "ts-node/register",
-      "-r",
-      "tsconfig-paths/register"
-    ],
-    "envFile": "${workspaceRoot}/.env",
-    "program": "${workspaceRoot}/local-debugger.js",
-    "args": [
-      "--portNumber", "3001",
-      "--skillEntryFile", "${workspaceRoot}/src/main/handlers/alexa/index.ts",
-      "--lambdaHandler", "handlers"
-    ],
-    "cwd": "${workspaceRoot}",
-    "console": "integratedTerminal",
-    "internalConsoleOptions": "neverOpen",
-    "restart": true
-   }
   ]
  }
