@@ -18,6 +18,10 @@ provider:
     ENV_AWS_REGION: ${ssm:/ENV_AWS_REGION}
 
 functions:
+  createFinancialProduct:
+    handler: dist/main/handlers/api/index.createFinancialProduct
+    events:
+      - httpApi: 'POST /financial-products'
   getStockPrice:
     handler: dist/main/handlers/api/index.getStockPrice
     events:
