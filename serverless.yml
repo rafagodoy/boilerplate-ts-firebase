@@ -10,38 +10,13 @@ provider:
       Action:
         - ssm:GetParameter*
       Resource: "arn:aws:ssm:us-east-1:646513389531:parameter/*"
-  environment:
-    ENV_ALPHA_VANTAGE_API_URL: ${ssm:/ENV_ALPHA_VANTAGE_API_URL}
-    ENV_ALPHA_VANTAGE_API_SECRET: ${ssm:/ENV_ALPHA_VANTAGE_API_SECRET}
-    ENV_AWS_ACCESS_KEY: ${ssm:/ENV_AWS_ACCESS_KEY}
-    ENV_AWS_SECRET_ACCESS_KEY: ${ssm:/ENV_AWS_SECRET_ACCESS_KEY}
-    ENV_AWS_REGION: ${ssm:/ENV_AWS_REGION}
 
 functions:
   createFinancialProduct:
     handler: dist/main/handlers/api/index.createFinancialProduct
     events:
       - httpApi: 'POST /financial-products'
-  getStockPrice:
-    handler: dist/main/handlers/api/index.getStockPrice
-    events:
-      - httpApi: 'GET /stocks/{codeName}'
-  getStockName:
-    handler: dist/main/handlers/api/index.getStockName
-    events:
-      - httpApi: 'GET /stocks/retrieve-name'
-  myMoneyBotSkill:
-    handler: dist/main/handlers/alexa/index.handlers
-    events:
-      - alexaSkill: amzn1.ask.skill.ab077192-4e04-40db-a522-ba73adbe06c9
 
 plugins:
   - serverless-offline
   - serverless-newrelic-lambda-layers
-
-custom:
-  newRelic:
-    accountId: ${ssm:/ENV_NEW_RELIC_ACCOUNT_ID}
-    apiKey: ${ssm:/ENV_NEW_RELIC_API_KEY}
-    enableExtension: false
-    cloudWatchFilter: "*"

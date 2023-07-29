@@ -1,4 +1,4 @@
-import { AuroraDb } from '@/infra/databases/aurora';
+import { Firebase } from '@/infra/databases/firebase';
 import { CreateFinancialProductRepository } from '@/adapters/repository';
 import { FinancialProduct } from '@/adapters/repository/protocols';
 import { 
@@ -8,7 +8,7 @@ import {
   FinancialProductsEntity,
 } from '@/domain/financial-products';
 
-const database = new AuroraDb<FinancialProduct, FinancialProductsEntity.all>();
+const database = new Firebase<FinancialProduct, FinancialProductsEntity.all>();
 const createFinancialProductRepository = new CreateFinancialProductRepository(database);
 const createFinancialProductController = new CreateFinancialProductController(
   createFinancialProductRepository,
