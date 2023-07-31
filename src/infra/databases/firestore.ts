@@ -1,6 +1,6 @@
 import { Database } from '@/adapters/repository/protocols';
 
-export class Firebase<T, U> implements Database<T, U> {
+export class Firestore<T, U> implements Database<T, U> {
   async insert(input: T): Promise<U> {
     console.log(input);
     return {
