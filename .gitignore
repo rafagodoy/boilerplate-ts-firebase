@@ -8,3 +8,5 @@ dist
 
 # Files
 .env
+yarn.lock
+yarn-error.log
