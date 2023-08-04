@@ -1,8 +1,9 @@
 {
   "functions": [
     {
-      "source": "src",
+      "source": "dist/main/handlers/firebase",
       "codebase": "default",
+      "predeploy": "yarn build",
       "ignore": [
         "node_modules",
         ".git",
