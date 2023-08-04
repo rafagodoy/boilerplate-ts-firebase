@@ -1,5 +1,5 @@
 {
-  "name": "mvp-my-money-bot-ts-api",
+  "name": "big-eye-api",
   "version": "1.0.0",
   "description": "API offers informations about financial market",
   "scripts": {
@@ -9,26 +9,34 @@
     "lint": "eslint . --ext .ts --fix",
     "build": "yarn clear && tsc && tsc-alias",
     "start:dev": "nodemon",
-    "postinstall": "tsc-alias setup"
+    "postinstall": "tsc-alias setup",
+    "deploy": "firebase deploy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafagodoy/mvp-my-money-bot-ts-api.git"
+    "url": "git+https://github.com/rafagodoy/big-eye-api.git"
   },
   "author": "Rafael Godoy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rafagodoy/mvp-my-money-bot-ts-api/issues"
+    "url": "https://github.com/rafagodoy/big-eye-api/issues"
   },
-  "homepage": "https://github.com/rafagodoy/mvp-my-money-bot-ts-api#readme",
+  "homepage": "https://github.com/rafagodoy/big-eye-api#readme",
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fast-glob": "^3.3.1",
+    "firebase-admin": "^11.10.1",
+    "firebase-functions": "^4.4.1",
     "node-fetch": "^2.6.6",
     "tsconfig-paths": "^4.2.0"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/babel__traverse": "^7.0.10",
+    "@types/express": "^4.17.17",
     "@types/jest": "^24.0.15",
     "@types/node-fetch": "^2.6.2",
     "@typescript-eslint/eslint-plugin": "^5.27.0",
