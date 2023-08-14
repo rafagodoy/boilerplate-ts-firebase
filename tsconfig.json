@@ -4,16 +4,18 @@
       "moduleResolution": "node",
       "noUnusedLocals": true,
       "noUnusedParameters": true,
+      "noImplicitReturns": true,
       "removeComments": true,
       "sourceMap": true,
       "target": "es2020",
-      "module": "commonjs",
+      "module": "CommonJS",
       "outDir": "dist",
       "esModuleInterop": true,
       "resolveJsonModule": true,
     },
+    "compileOnSave": true,
     "include": [
-      "src/**/*.ts"
+      "src"
     ],
     "exclude": [
       "node_modules/**/*",

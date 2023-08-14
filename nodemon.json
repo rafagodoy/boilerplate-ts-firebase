@@ -9,5 +9,5 @@
   "watch": [
     "src"
   ],
-  "exec": "sls offline"
+  "exec": "ts-node -r tsconfig-paths/register src/main/index.ts"
 }
