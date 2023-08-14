@@ -1,5 +1,6 @@
 import { Express, Router } from 'express';
-import fg from 'fast-glob';
+
+import financialRoutes from '../routes/financial-products.router';
 
 export default (app: Express): void => {
 
@@ -7,8 +8,5 @@ export default (app: Express): void => {
 
   app.use('/v1/api', router);
 
-  fg.sync('**/src/main/routes/**.router.ts').map(async file => {
-    console.log(file);
-    (await import(`../../../${file}`)).default(router);
-  });
+  financialRoutes(router);
 };

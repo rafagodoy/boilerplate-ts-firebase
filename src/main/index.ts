@@ -6,11 +6,14 @@ import setupRoutes from './config/routes';
 
 const app = express();
 
+setupRoutes(app);
+
 app.use(bodyParser.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
-setupRoutes(app);
 
-app.listen(3000, () => console.log('Launch the rocket!!! Start from 3000 port'));
+app.listen(3000, () => {
+  console.log('Example app listening on port 3000');
+});
 
-export { app };
+export default app;
