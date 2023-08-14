@@ -1,8 +1,5 @@
 {
   "projects": {
-    "default": "fishing-money-48480",
-    "big-eye-api": "fishing-money-48480"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "fishing-money-48480"
+  }
 }

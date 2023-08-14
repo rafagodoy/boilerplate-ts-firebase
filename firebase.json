@@ -1,18 +1,18 @@
 {
   "functions": [
     {
-      "source": "dist/main/handlers/firebase",
+      "source": "./dist",
       "codebase": "default",
-      "predeploy": "yarn build",
+      "runtime": "nodejs18",
       "ignore": [
         "node_modules",
         ".git",
         "firebase-debug.log",
         "firebase-debug.*.log"
+      ],
+      "predeploy": [
+        "yarn build"
       ]
     }
-  ],
-  "storage": {
-    "rules": "storage.rules"
-  }
+  ]
 }
