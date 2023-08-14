@@ -9,5 +9,5 @@
   "watch": [
     "src"
   ],
-  "exec": "ts-node -r tsconfig-paths/register src/main/express.ts"
+  "exec": "ts-node -r tsconfig-paths/register src/main/index.ts"
 }
