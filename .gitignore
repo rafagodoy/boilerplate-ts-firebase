@@ -11,3 +11,6 @@ dist
 yarn.lock
 yarn-error.log
 ui-debug.log
+src/config/firebase-auth-key.json
+firebase-debug.log
+firebase-auth-key.json
