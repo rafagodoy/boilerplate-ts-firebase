@@ -25,7 +25,7 @@ firebase login
 firebase use <project_id>
 ```
 
-**2 - Install nodejs packages:** Now, you need install nodeJs dependencies from project running
+**3 - Install nodejs packages:** Now, you need install nodeJs dependencies from project running
 
 ```bash
 yarn install
@@ -37,7 +37,7 @@ or
 npm install
 ```
 
-**2 - Setup application credentials:** download the credentials key from firebase project through GCP console and then, run this command to setup default
+**4 - Setup application credentials:** download the credentials key from firebase project through GCP console and then, run this command to setup default
 
 ```bash
 export GOOGLE_APPLICATION_CREDENTIALS="/home/user/Downloads/service-account-file.json"
