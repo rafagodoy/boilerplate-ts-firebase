@@ -22,7 +22,7 @@ firebase login
 **2 - Choose the project:** Select one project available executing the following command
 
 ```bash
-firebase use <project_id>
+firebase use fishing-money-48480
 ```
 
 **3 - Install nodejs packages:** Now, you need install nodeJs dependencies from project running
