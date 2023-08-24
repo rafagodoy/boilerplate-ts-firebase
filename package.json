@@ -7,9 +7,10 @@
     "test coverage": "jest --coverage",
     "clear": "rm -r ./dist/*",
     "lint": "eslint . --ext .ts --fix",
-    "build": "yarn clear && tsc && tsc-alias && yarn cp:config-engine",
-    "cp:config-engine": "cp ./package.json ./dist",
+    "build": "yarn clear && tsc && tsc-alias && yarn config:engine",
+    "config:engine": "cp ./package.json ./dist",
     "start:dev": "nodemon",
+    "start:emulator": "firebase emulators:start",
     "deploy": "firebase deploy"
   },
   "repository": {
