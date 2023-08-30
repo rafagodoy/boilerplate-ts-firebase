@@ -11,9 +11,10 @@ export class CreateFinancialProductRepository implements CreateFinancialProducts
 
   constructor(
     private readonly database: Database<FinancialProduct, FinancialProductsEntity.all>,
+    private readonly entity = 'financial-products',
   ) {}
 
-  async create(financialProduct: FinancialProduct): Promise<FinancialProductsEntity.all> {
-    return this.database.insert(financialProduct);
+  async insert(financialProduct: FinancialProduct): Promise<FinancialProductsEntity.all> {
+    return this.database.insert(financialProduct, this.entity);
   }
 }

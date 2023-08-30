@@ -1,3 +1,3 @@
 export interface Database<T, U> {
-  insert(input: T): Promise<U>,
+  insert(data: T, entity: string): Promise<U>,
 }
