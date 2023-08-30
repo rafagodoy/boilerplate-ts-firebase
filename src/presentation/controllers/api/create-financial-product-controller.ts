@@ -27,7 +27,7 @@ export class CreateFinancialProductController implements HttpController {
 
       const financialProduct = body as CreateFinancialProductSchema;
       
-      const financialProductInserted = await this.financialProductsUseCase.create(financialProduct);
+      const financialProductInserted = await this.financialProductsUseCase.insert(financialProduct);
 
       return await this.getResponse(financialProductInserted);
 
