@@ -7,10 +7,10 @@
     "request": "launch",
     "cwd": "${workspaceRoot}",
     "runtimeExecutable": "npm",
-    "localRoot": "${workspaceRoot}/src/main/handlers/api",
+    "localRoot": "${workspaceRoot}/src/main",
     "runtimeArgs": [
      "run-script",
-     "debug"
+     "start:debug"
     ],
     "port": 3000,
     "console": "integratedTerminal",

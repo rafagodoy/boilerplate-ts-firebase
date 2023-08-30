@@ -4,7 +4,7 @@
   "ignore": ["*.test.js", "fixtures/*"],
   "ext": "ts,json",
   "events": {
-    "restart": "rm -r ./dist/* && tsc && tsc-alias"
+    "restart": "rm -r ./dist/* && tsc && tsc-alias && yarn config:engine"
   },
   "watch": [
     "src"
