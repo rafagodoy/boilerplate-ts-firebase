@@ -10,5 +10,5 @@ type FinancialProduct = {
 };
 
 export interface CreateFinancialProductsUseCase {
-  create(financialProduct: FinancialProduct): Promise<FinancialProductsEntity.all>
+  insert(financialProduct: FinancialProduct): Promise<FinancialProductsEntity.all>
 }
