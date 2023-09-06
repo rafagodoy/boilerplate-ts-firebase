@@ -1,5 +1,5 @@
 import { SchemaResponse, Validator } from '@/adapters/utils/protocols';
-import { string, number, Schema, boolean } from 'yup';
+import { string, number, Schema } from 'yup';
 
 export class SchemaValidator implements Validator {
 
