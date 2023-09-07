@@ -37,9 +37,9 @@ yarn install
 export GOOGLE_APPLICATION_CREDENTIALS="/home/user/Downloads/service-account-file.json"
 ```
 
-**OBS 1:** to acquire the credentials keys from firebase project, go to https://cloud.google.com/iam/docs/keys-list-get
+> :page_facing_up: **note:** to acquire the credentials keys from firebase project, go to https://cloud.google.com/iam/docs/keys-list-get
 
-**OBS 2:** persist this variable in your OS to avoid insert it each time that you restart your computer
+> :page_facing_up: **note:** persist this variable in your OS to avoid insert it each time that you restart your computer
 
 
 **5 - Setup database if you wants emulate it:** run this command to setup firestore environment variable when you simulate your database on localhost
@@ -48,7 +48,7 @@ export GOOGLE_APPLICATION_CREDENTIALS="/home/user/Downloads/service-account-file
 export FIRESTORE_EMULATOR_HOST="127.0.0.1:8080"
 ```
 
-**OBS:** to run a database on localhost, it is necessary to have Java - JRE installed. Then, configure the database environment variable to monitor the localhost database instance
+> :page_facing_up: **note:** to run a database on localhost, it is necessary **to have Java - JRE installed**. Then, configure the database environment variable to monitor the localhost database instance
 
 ## How to run application on localhost
 
@@ -58,7 +58,7 @@ To run your application and start it on localhost:
 yarn start:dev
 ```
 
-**OBS:** to access resources like a database/firestore is necessary setup environment variable GOOGLE_APPLICATION_CREDENTIALS otherwise you will get "Could not load the default credentials" error 
+> :page_facing_up: **note:** to access resources like a database/firestore is necessary setup environment variable `GOOGLE_APPLICATION_CREDENTIALS` otherwise you will get "Could not load the default credentials" error 
 
 ## How to run application on firebase emulators
 

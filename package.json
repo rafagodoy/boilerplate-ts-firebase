@@ -34,7 +34,8 @@
     "firebase-functions": "^4.4.1",
     "node-fetch": "^2.6.6",
     "tsconfig-paths": "^4.2.0",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
