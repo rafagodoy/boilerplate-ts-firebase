@@ -1,6 +1,4 @@
-# The big eye API
-
-DESCRIPTION
+# boilerplate for firebase and typescript projects
 
 ## How to setup the application
 
