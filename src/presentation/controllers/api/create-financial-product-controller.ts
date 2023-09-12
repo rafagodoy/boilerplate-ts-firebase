@@ -1,5 +1,5 @@
 import { HttpRequest, HttpResponse, HttpController } from '@/presentation/protocols';
-import { CreateFinancialProductSchema } from '@/presentation/validation/create-financial-product';
+import { CreateFinancialProductSchema } from '@/presentation/validation/financial-product';
 import { 
   CreateFinancialProductsUseCase,
   FinancialProductsEntity,

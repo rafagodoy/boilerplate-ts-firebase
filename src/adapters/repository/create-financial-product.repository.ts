@@ -1,9 +1,8 @@
 import { 
   CreateFinancialProductsUseCase,
   FinancialProductsEntity,
+  FinancialProduct,
 } from '@/domain/financial-products';
-
-import { FinancialProduct } from './protocols/create-financial-product';
 
 import { Database } from './protocols/database';
 
