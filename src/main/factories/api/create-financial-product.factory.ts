@@ -10,7 +10,7 @@ import {
 import { SchemaValidator } from '@/infra/libs/schema-validator';
 import { 
   CreateFinancialProductValidator,
-} from '@/presentation/validation/create-financial-product';
+} from '@/presentation/validation/financial-product';
 import { 
   BaseController,
 } from '@/presentation/controllers/api/base-controller';

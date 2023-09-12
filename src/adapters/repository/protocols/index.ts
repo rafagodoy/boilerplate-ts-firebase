@@ -1,2 +1,2 @@
-export * from './create-financial-product';
+export * from '../../../domain/financial-products/financial-product-types';
 export * from './database';
