@@ -230,4 +230,28 @@ export class SchemaValidator implements Validator {
       `The ${fieldName} is invalid because the value is not a number`,
     );
   }
+
+  async validateRequiredField(fieldName: string, data: unknown): Promise<SchemaResponse> {
+
+    if (data) {
+      return this.successResponse();
+    }
+
+    return this.errorResponse(
+      `The ${fieldName} field is required`,
+    );
+  }
+
+  async validateFieldByMatchNames(fieldName: string, data: unknown, objectToMatch: object) {
+    for (const key in objectToMatch) {
+      if (objectToMatch[key] === data) {
+        return this.successResponse();
+      }
+    }
+  
+    return this.errorResponse(
+      `The ${fieldName} is invalid because value doesn't match with
+      ${JSON.stringify(objectToMatch)}`,
+    );
+  }
 }
